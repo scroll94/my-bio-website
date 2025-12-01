@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя Любимая | Биография</title>
+    <title>Моя Биография | [Имя Девушки]</title>
     
     <!-- Шрифты -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Иконки -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,126 +18,302 @@
     <link rel="stylesheet" href="style.css">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍🎓</text></svg>">
 </head>
 <body>
-    <!-- Кнопка меню -->
-    <button class="menu-toggle" id="menuToggle">
-        <i class="fas fa-bars"></i>
-    </button>
+    <!-- Анимированный фон -->
+    <div class="floating-elements">
+        <div class="floating-element">📚</div>
+        <div class="floating-element">✏️</div>
+        <div class="floating-element">🎯</div>
+        <div class="floating-element">🌟</div>
+        <div class="floating-element">💡</div>
+        <div class="floating-element">🎨</div>
+    </div>
     
     <!-- Навигация -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Моя<span>Любимая</span></a>
+            <a href="#home" class="logo">[Имя]</a>
             <ul class="nav-menu">
                 <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О ней</a></li>
-                <li><a href="#gallery">Фотогалерея</a></li>
-                <li><a href="#story">История</a></li>
-                <li><a href="#qualities">Качества</a></li>
-                <li><a href="#moments">Моменты</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#hobbies">Увлечения</a></li>
+                <li><a href="#goals">Цели</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
             </ul>
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-heart"></i>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
     
     <!-- Главный экран -->
     <section class="hero" id="home">
-        <div class="hero-background"></div>
         <div class="hero-content">
-            <div class="hero-text" data-aos="fade-up">
-                <h3 class="hero-subtitle">Самая прекрасная</h3>
-                <h1 class="hero-title">
-                    <span class="highlight">Имя</span> Девушки
-                </h1>
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="hero-subtitle">Привет! Меня зовут</h3>
+                <h1 class="hero-title">[Имя] <span class="highlight">[Фамилия]</span></h1>
                 <p class="hero-description">
-                    Нежная, умная, вдохновляющая. Её улыбка освещает мир, а сердце наполнено добротой.
+                    Я выпускница школы, целеустремлённая и амбициозная девушка. 
+                    Каждый день я учусь чему-то новому, готовлюсь к экзаменам 
+                    и строю планы на будущее.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">
-                        <i class="fas fa-heart"></i> Узнать больше
-                    </a>
-                    <a href="#gallery" class="btn btn-secondary">
-                        <i class="fas fa-images"></i> Фотографии
-                    </a>
+                <div class="hero-stats">
+                    <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="stat-number">11</span>
+                        <span class="stat-text">Класс</span>
+                    </div>
+                    <div class="stat" data-aos="zoom-in" data-aos-delay="400">
+                        <span class="stat-number">[Город]</span>
+                        <span class="stat-text">Город</span>
+                    </div>
+                    <div class="stat" data-aos="zoom-in" data-aos-delay="600">
+                        <span class="stat-number">ЕГЭ</span>
+                        <span class="stat-text">Цель 2024</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                <!-- ЗДЕСЬ БУДЕТ ГЛАВНОЕ ФОТО -->
-                <div class="main-photo-placeholder">
-                    <i class="fas fa-camera"></i>
-                    <p>Главное фото здесь</p>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1200">
+                <!-- Главное фото -->
+                <div class="main-photo">
+                    <div class="photo-frame">
+                        <i class="fas fa-user-circle"></i>
+                        <p>Моё фото</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="scroll-down">
-            <span>Листай вниз</span>
+            <span>Узнай больше</span>
             <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="floating-hearts">
-            <div class="heart">❤</div>
-            <div class="heart">💖</div>
-            <div class="heart">💕</div>
-            <div class="heart">💗</div>
-            <div class="heart">💓</div>
         </div>
     </section>
     
-    <!-- Раздел "О ней" -->
+    <!-- Обо мне -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-star"></i> О <span class="highlight">ней</span>
+                <i class="fas fa-user"></i> Обо <span class="highlight">мне</span>
             </h2>
+            
             <div class="about-content">
-                <div class="about-image" data-aos="fade-right">
-                    <!-- ФОТО 1 -->
-                    <div class="photo-frame photo-1">
-                        <div class="photo-placeholder">
-                            <i class="fas fa-user-circle"></i>
-                            <p>Фото 1: Портрет</p>
+                <div class="about-image" data-aos="fade-right" data-aos-duration="800">
+                    <!-- Фото 1 -->
+                    <div class="photo-container">
+                        <div class="about-photo">
+                            <i class="fas fa-smile"></i>
+                            <p>Фото 1</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-text" data-aos="fade-left">
-                    <h3>Её история</h3>
+                
+                <div class="about-text" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Моя история</h3>
                     <p>
-                        [Здесь напиши о её происхождении, где родилась, выросла, чем увлекается]
+                        Я родилась и выросла в [город]. С детства была любознательной 
+                        и активной девочкой. Любила читать книги, заниматься творчеством 
+                        и узнавать что-то новое.
                     </p>
                     <p>
-                        [Опиши её характер, мечты, цели в жизни]
+                        В школе всегда стремилась к знаниям, участвовала в олимпиадах 
+                        и школьных мероприятиях. Сейчас я в 11 классе и готовлюсь 
+                        к одному из самых важных этапов в жизни — сдаче ЕГЭ.
                     </p>
                     <p>
-                        [Что делает её особенной, уникальные черты характера]
+                        Я верю, что усердный труд и целеустремлённость помогут мне 
+                        достичь всех поставленных целей.
                     </p>
                     
-                    <div class="about-details">
-                        <div class="detail" data-aos="zoom-in">
+                    <div class="personal-info">
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="100">
                             <i class="fas fa-birthday-cake"></i>
                             <div>
-                                <h4>День рождения</h4>
-                                <p>[Дата рождения]</p>
+                                <h4>Дата рождения</h4>
+                                <p>[ДД.ММ.ГГГГ]</p>
                             </div>
                         </div>
-                        <div class="detail" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="200">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <h4>Город</h4>
-                                <p>[Город проживания]</p>
+                                <h4>Место жительства</h4>
+                                <p>[Город, Страна]</p>
                             </div>
                         </div>
-                        <div class="detail" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="fas fa-graduation-cap"></i>
+                        <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-heart"></i>
                             <div>
-                                <h4>Образование</h4>
-                                <p>[Профессия/учеба]</p>
+                                <h4>Характер</h4>
+                                <p>Целеустремлённая, ответственная, доброжелательная</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Образование и подготовка к ЕГЭ -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-graduation-cap"></i> Образование и <span class="highlight">ЕГЭ</span>
+            </h2>
+            
+            <div class="education-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">Школа</div>
+                    <div class="timeline-content">
+                        <h3>[Номер/Название школы]</h3>
+                        <p>Учусь в 11 классе. Любимые предметы: [предметы].</p>
+                        <p>Средний балл: [балл]. Участвую в школьной жизни.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-date">Подготовка к ЕГЭ</div>
+                    <div class="timeline-content">
+                        <h3>Мои предметы для сдачи</h3>
+                        <div class="subjects">
+                            <div class="subject">Русский язык</div>
+                            <div class="subject">Математика</div>
+                            <div class="subject">[Предмет 3]</div>
+                            <div class="subject">[Предмет 4]</div>
+                        </div>
+                        <p>Ежедневно занимаюсь по 5-6 часов, решаю пробники, 
+                        посещаю дополнительные курсы.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                    <div class="timeline-date">Распорядок дня</div>
+                    <div class="timeline-content">
+                        <h3>Мой обычный день</h3>
+                        <div class="schedule">
+                            <div class="time-slot">
+                                <span class="time">08:00 - 14:00</span>
+                                <span class="activity">Школа</span>
+                            </div>
+                            <div class="time-slot">
+                                <span class="time">15:00 - 18:00</span>
+                                <span class="activity">Подготовка к ЕГЭ</span>
+                            </div>
+                            <div class="time-slot">
+                                <span class="time">19:00 - 21:00</span>
+                                <span class="activity">Отдых, хобби</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="motivation-box" data-aos="zoom-in" data-aos-delay="600">
+                <i class="fas fa-quote-left"></i>
+                <p>"Знания открывают двери в будущее. Каждый выученный предмет — 
+                шаг к мечте. Я готова трудиться, чтобы достичь своих целей."</p>
+                <i class="fas fa-quote-right"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Увлечения и хобби -->
+    <section class="hobbies" id="hobbies">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-palette"></i> Мои <span class="highlight">увлечения</span>
+            </h2>
+            
+            <div class="hobbies-grid">
+                <div class="hobby-card" data-aos="flip-left" data-aos-duration="600">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>Чтение</h3>
+                    <p>Люблю художественную литературу, особенно [жанр]. 
+                    Читаю как классику, так и современные произведения.</p>
+                </div>
+                
+                <div class="hobby-card" data-aos="flip-left" data-aos-duration="600" data-aos-delay="100">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Музыка</h3>
+                    <p>Слушаю [жанры музыки]. Любимые исполнители: [исполнители]. 
+                    Музыка помогает сосредоточиться во время учёбы.</p>
+                </div>
+                
+                <div class="hobby-card" data-aos="flip-left" data-aos-duration="600" data-aos-delay="200">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Фотография</h3>
+                    <p>Увлекаюсь фотографией, особенно люблю снимать природу 
+                    и городские пейзажи. Это мой способ замечать красоту вокруг.</p>
+                </div>
+                
+                <div class="hobby-card" data-aos="flip-left" data-aos-duration="600" data-aos-delay="300">
+                    <div class="hobby-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Кулинария</h3>
+                    <p>Люблю готовить, особенно выпечку и десерты. 
+                    Экспериментирую с рецептами, угощаю близких.</p>
+                </div>
+            </div>
+            
+            <div class="hobby-photos" data-aos="fade-up" data-aos-delay="400">
+                <!-- Фото для хобби -->
+                <div class="hobby-photo">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-images"></i>
+                        <p>Фото моего хобби</p>
+                    </div>
+                </div>
+                <div class="hobby-photo">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-images"></i>
+                        <p>Ещё одно фото</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Цели и мечты -->
+    <section class="goals" id="goals">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-bullseye"></i> Мои <span class="highlight">цели</span>
+            </h2>
+            
+            <div class="goals-content">
+                <div class="short-term" data-aos="fade-right" data-aos-duration="800">
+                    <h3><i class="fas fa-rocket"></i> Краткосрочные цели</h3>
+                    <ul>
+                        <li data-aos="fade-right" data-aos-delay="100">Успешно сдать ЕГЭ</li>
+                        <li data-aos="fade-right" data-aos-delay="200">Поступить в [Название вуза]</li>
+                        <li data-aos="fade-right" data-aos-delay="300">Улучшить английский язык</li>
+                        <li data-aos="fade-right" data-aos-delay="400">Научиться [новый навык]</li>
+                    </ul>
+                </div>
+                
+                <div class="long-term" data-aos="fade-left" data-aos-duration="800">
+                    <h3><i class="fas fa-star"></i> Долгосрочные мечты</h3>
+                    <ul>
+                        <li data-aos="fade-left" data-aos-delay="100">Получить высшее образование</li>
+                        <li data-aos="fade-left" data-aos-delay="200">Стать [профессия]</li>
+                        <li data-aos="fade-left" data-aos-delay="300">Путешествовать по миру</li>
+                        <li data-aos="fade-left" data-aos-delay="400">Развиваться как личность</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="vision-statement" data-aos="zoom-in" data-aos-delay="600">
+                <h3>Моё жизненное кредо</h3>
+                <p>"Не бояться ставить высокие цели и упорно работать для их достижения. 
+                Каждый день — это возможность стать лучше, чем вчера."</p>
             </div>
         </div>
     </section>
@@ -148,199 +324,85 @@
             <h2 class="section-title" data-aos="fade-up">
                 <i class="fas fa-images"></i> Фото<span class="highlight">галерея</span>
             </h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
-                Самые красивые и памятные моменты
-            </p>
             
             <div class="gallery-grid">
-                <!-- Фото 2 -->
-                <div class="gallery-item" data-aos="flip-left">
-                    <div class="gallery-photo photo-placeholder">
-                        <i class="fas fa-smile"></i>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-smile-beam"></i>
                         <p>Фото 2: Улыбка</p>
                     </div>
-                    <div class="gallery-caption">Сияющая улыбка</div>
                 </div>
-                
-                <!-- Фото 3 -->
-                <div class="gallery-item" data-aos="flip-left" data-aos-delay="150">
-                    <div class="gallery-photo photo-placeholder">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-book"></i>
+                        <p>Фото 3: Учёба</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="photo-placeholder">
                         <i class="fas fa-hiking"></i>
-                        <p>Фото 3: Хобби</p>
+                        <p>Фото 4: Отдых</p>
                     </div>
-                    <div class="gallery-caption">Любимое занятие</div>
                 </div>
-                
-                <!-- Фото 4 -->
-                <div class="gallery-item" data-aos="flip-left" data-aos-delay="300">
-                    <div class="gallery-photo photo-placeholder">
-                        <i class="fas fa-camera"></i>
-                        <p>Фото 4: Портрет</p>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Фото 5: С друзьями</p>
                     </div>
-                    <div class="gallery-caption">Прекрасный портрет</div>
                 </div>
-                
-                <!-- Фото 5 -->
-                <div class="gallery-item" data-aos="flip-left" data-aos-delay="450">
-                    <div class="gallery-photo photo-placeholder">
-                        <i class="fas fa-heart"></i>
-                        <p>Фото 5: Отдых</p>
-                    </div>
-                    <div class="gallery-caption">Отдых на природе</div>
-                </div>
-            </div>
-            
-            <div class="gallery-instruction" data-aos="fade-up">
-                <i class="fas fa-info-circle"></i>
-                <p>Загрузи сюда её самые красивые фотографии!</p>
             </div>
         </div>
     </section>
     
-    <!-- История знакомства -->
-    <section class="story" id="story">
+    <!-- Контакты -->
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-book-open"></i> Наша <span class="highlight">история</span>
+                <i class="fas fa-envelope"></i> Свяжитесь со <span class="highlight">мной</span>
             </h2>
             
-            <div class="timeline">
-                <!-- Событие 1 -->
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Первая встреча</div>
-                    <div class="timeline-content">
-                        <h3>Когда мы познакомились</h3>
-                        <p>[Опиши, где и как вы познакомились]</p>
-                        <div class="timeline-photo photo-placeholder small">
-                            <i class="fas fa-calendar"></i>
-                            <p>Фото встречи</p>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Давайте общаться!</h3>
+                    <p>Я всегда открыта для новых знакомств и интересных разговоров.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>[ваш.email@example.com]</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-vk"></i>
+                            <div>
+                                <h4>ВКонтакте</h4>
+                                <p>[ссылка на страницу]</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-telegram"></i>
+                            <div>
+                                <h4>Telegram</h4>
+                                <p>[@username]</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Событие 2 -->
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Первый разговор</div>
-                    <div class="timeline-content">
-                        <h3>О чём говорили</h3>
-                        <p>[Что обсуждали, что понравилось]</p>
-                    </div>
+                <div class="contact-message" data-aos="fade-left" data-aos-duration="800">
+                    <h3>Моё послание</h3>
+                    <p>
+                        Спасибо, что посетили мой сайт! Надеюсь, вы узнали обо мне немного больше. 
+                        Я верю, что усердный труд, образование и постоянное развитие — 
+                        ключи к успешному будущему.
+                    </p>
+                    <p>
+                        Если вы тоже готовитесь к экзаменам или делите со мной какие-то интересы — 
+                        буду рада пообщаться!
+                    </p>
                 </div>
-                
-                <!-- Событие 3 -->
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">Первый свидание</div>
-                    <div class="timeline-content">
-                        <h3>Куда ходили</h3>
-                        <p>[Опиши первое свидание]</p>
-                        <div class="timeline-photo photo-placeholder small">
-                            <i class="fas fa-coffee"></i>
-                            <p>Фото свидания</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Событие 4 -->
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">Сейчас</div>
-                    <div class="timeline-content">
-                        <h3>Наши отношения</h3>
-                        <p>[Как развиваются отношения, планы на будущее]</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Качества -->
-    <section class="qualities" id="qualities">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-gem"></i> Её лучшие <span class="highlight">качества</span>
-            </h2>
-            
-            <div class="qualities-grid">
-                <div class="quality-card" data-aos="zoom-in">
-                    <div class="quality-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Доброта</h3>
-                    <p>Её сердце полно любви и заботы о других</p>
-                </div>
-                
-                <div class="quality-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="quality-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Ум</h3>
-                    <p>Умная и мудрая, всегда даст хороший совет</p>
-                </div>
-                
-                <div class="quality-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="quality-icon">
-                        <i class="fas fa-laugh-beam"></i>
-                    </div>
-                    <h3>Чувство юмора</h3>
-                    <p>Умеет смеяться и радоваться жизни</p>
-                </div>
-                
-                <div class="quality-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="quality-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Поддержка</h3>
-                    <p>Всегда поддержит в трудную минуту</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Особые моменты -->
-    <section class="moments" id="moments">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">
-                <i class="fas fa-camera-retro"></i> Особые <span class="highlight">моменты</span>
-            </h2>
-            
-            <div class="moments-content">
-                <div class="moment-text" data-aos="fade-right">
-                    <h3>Что я ценю больше всего</h3>
-                    <p>[Опиши самые трогательные моменты вместе]</p>
-                    <p>[Что особенно запомнилось, важные события]</p>
-                    <p>[Почему она особенная для тебя]</p>
-                    
-                    <div class="special-quote" data-aos="fade-up">
-                        <i class="fas fa-quote-left"></i>
-                        <p>"[Здесь можно вставить её любимую фразу или твои слова о ней]"</p>
-                        <i class="fas fa-quote-right"></i>
-                    </div>
-                </div>
-                
-                <div class="moment-photos" data-aos="fade-left">
-                    <!-- Фото 6 -->
-                    <div class="moment-photo large photo-placeholder">
-                        <i class="fas fa-star"></i>
-                        <p>Фото 6: Особенный момент</p>
-                    </div>
-                    
-                    <!-- Фото 7 -->
-                    <div class="moment-photo small photo-placeholder">
-                        <i class="fas fa-heart"></i>
-                        <p>Фото 7: Ещё один момент</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Посвящение -->
-    <section class="dedication">
-        <div class="container">
-            <div class="dedication-content" data-aos="zoom-in">
-                <i class="fas fa-heart dedication-heart"></i>
-                <h2>Этот сайт создан с любовью</h2>
-                <p>Для самой прекрасной девушки на свете</p>
-                <p class="dedication-date">[Дата создания]</p>
             </div>
         </div>
     </section>
@@ -349,20 +411,24 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-heart">
-                    <i class="fas fa-heart"></i>
+                <div class="footer-quote" data-aos="fade-up">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Будущее принадлежит тем, кто верит в красоту своей мечты."</p>
+                    <p class="author">— Элеонора Рузвельт</p>
                 </div>
-                <p>Создано с бесконечной любовью и восхищением</p>
-                <p>© <span id="currentYear"></span> Вечная любовь</p>
-                <div class="footer-love">
-                    <span>L</span>
-                    <span>O</span>
-                    <span>V</span>
-                    <span>E</span>
+                
+                <div class="footer-info">
+                    <p>&copy; <span id="currentYear"></span> [Имя Фамилия]. Все права защищены.</p>
+                    <p>Сайт создан с целью рассказать о себе и своих целях</p>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     
     <!-- Скрипты -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
