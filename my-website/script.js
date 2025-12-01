@@ -2,32 +2,9 @@
 AOS.init({
     duration: 800,
     once: true,
-    offset: 100
-});
-
-// Тёмная/светлая тема
-const themeToggle = document.getElementById('themeToggle');
-const themeIcon = themeToggle.querySelector('i');
-
-// Проверяем сохранённую тему
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark-theme');
-    themeIcon.classList.remove('fa-heart');
-    themeIcon.classList.add('fa-moon');
-}
-
-themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    
-    if (document.body.classList.contains('dark-theme')) {
-        themeIcon.classList.remove('fa-heart');
-        themeIcon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-heart');
-        localStorage.setItem('theme', 'light');
-    }
+    offset: 100,
+    delay: 100,
+    easing: 'ease-in-out'
 });
 
 // Мобильное меню
@@ -67,81 +44,98 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Текущий год в футере
-document.getElementById('currentYear').textContent = new Date().getFullYear();
+// Кнопка "Наверх"
+const scrollTopBtn = document.getElementById('scrollTop');
 
-// Эффект для навигации при скролле
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    const scrollTop = window.scrollY;
+    if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('visible');
+    } else {
+        scrollTopBtn.classList.remove('visible');
+    }
     
-    if (scrollTop > 100) {
+    // Эффект для навигации
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 100) {
         navbar.style.padding = '0.5rem 0';
         navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-        navbar.style.backgroundColor = 'var(--nav-bg)';
     } else {
         navbar.style.padding = '1rem 0';
-        navbar.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
-        navbar.style.backgroundColor = 'var(--nav-bg)';
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
 });
 
-// Создаём плавающие сердца
-function createHearts() {
-    const heartsContainer = document.querySelector('.floating-hearts');
-    const hearts = ['❤', '💖', '💕', '💗', '💓', '💞', '💝'];
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Создание плавающих элементов
+function createFloatingElements() {
+    const container = document.querySelector('.floating-elements');
+    const elements = ['📚', '✏️', '🎯', '🌟', '💡', '🎨', '📖', '🖋️', '⭐', '✨'];
     
-    for (let i = 0; i < 10; i++) {
-        const heart = document.createElement('div');
-        heart.className = 'heart';
-        heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
-        heart.style.left = Math.random() * 100 + '%';
-        heart.style.animationDelay = Math.random() * 15 + 's';
-        heart.style.fontSize = (Math.random() * 20 + 15) + 'px';
-        heartsContainer.appendChild(heart);
+    for (let i = 0; i < 15; i++) {
+        const element = document.createElement('div');
+        element.className = 'floating-element';
+        element.textContent = elements[Math.floor(Math.random() * elements.length)];
+        element.style.left = Math.random() * 100 + '%';
+        element.style.animationDelay = Math.random() * 20 + 's';
+        element.style.fontSize = (Math.random() * 20 + 15) + 'px';
+        element.style.opacity = Math.random() * 0.15 + 0.05;
+        container.appendChild(element);
     }
 }
 
-// Запускаем создание сердец после загрузки страницы
-window.addEventListener('load', createHearts);
-
-// Анимация для кнопки темы
-themeToggle.addEventListener('mouseenter', () => {
-    themeToggle.style.transform = 'scale(1.1) rotate(10deg)';
-});
-
-themeToggle.addEventListener('mouseleave', () => {
-    themeToggle.style.transform = 'scale(1) rotate(0deg)';
-});
-
-// Добавляем параллакс эффект для героя
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.backgroundPosition = `50% ${rate}px`;
-    }
-});
-
-// Инициализация при загрузке
+// Загрузка страницы
 document.addEventListener('DOMContentLoaded', () => {
-    // Добавляем текущую дату в посвящение
-    const now = new Date();
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    const dateElements = document.querySelectorAll('.dedication-date');
-    dateElements.forEach(el => {
-        el.textContent = now.toLocaleDateString('ru-RU', options);
-    });
+    // Текущий год в футере
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
     
-    // Добавляем эффект наведения на карточки
-    document.querySelectorAll('.quality-card, .gallery-item, .detail').forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-10px)';
+    // Создание плавающих элементов
+    createFloatingElements();
+    
+    // Анимация при наведении на элементы
+    document.querySelectorAll('.info-item, .contact-item, .hobby-card').forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 15px 30px rgba(138, 43, 226, 0.15)';
         });
         
-        card.addEventListener('mouseleave', function() {
+        item.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'var(--shadow)';
         });
     });
+    
+    // Анимация для статистики
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach(stat => {
+        const finalValue = stat.textContent;
+        let currentValue = 0;
+        
+        if (!isNaN(finalValue)) {
+            const increment = finalValue / 50;
+            const timer = setInterval(() => {
+                currentValue += increment;
+                if (currentValue >= finalValue) {
+                    clearInterval(timer);
+                    currentValue = finalValue;
+                }
+                stat.textContent = Math.floor(currentValue);
+            }, 30);
+        }
+    });
+});
+
+// Параллакс эффект для фона
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const floatingElements = document.querySelector('.floating-elements');
+    
+    if (floatingElements) {
+        floatingElements.style.transform = `translateY(${scrolled * 0.1}px)`;
+    }
 });
