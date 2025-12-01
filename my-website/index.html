@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя биография</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Мой<span>Сайт</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#timeline">Мой путь</a></li>
+                <li><a href="#achievements">Достижения</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h3 class="hero-subtitle" data-aos="fade-up">Привет, меня зовут</h3>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                <span class="highlight">Твоё</span> Имя
+            </h1>
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                [Напиши о себе кратко: чем занимаешься, что делаешь]
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#about" class="btn btn-primary">Узнать больше</a>
+                <a href="#contact" class="btn btn-secondary">Связаться</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span>Листай вниз</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Обо <span class="highlight">мне</span></h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user"></i>
+                        <p>Твоё фото здесь</p>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Моя история</h3>
+                    <p>
+                        [Напиши свою историю здесь]
+                    </p>
+                    <p>
+                        [Продолжение истории]
+                    </p>
+                    
+                    <div class="facts">
+                        <div class="fact" data-aos="zoom-in" data-aos-delay="200">
+                            <span class="fact-number">5+</span>
+                            <span class="fact-text">Лет опыта</span>
+                        </div>
+                        <div class="fact" data-aos="zoom-in" data-aos-delay="400">
+                            <span class="fact-number">50+</span>
+                            <span class="fact-text">Проектов</span>
+                        </div>
+                        <div class="fact" data-aos="zoom-in" data-aos-delay="600">
+                            <span class="fact-number">100%</span>
+                            <span class="fact-text">Энтузиазма</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Мой <span class="highlight">путь</span></h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <h3>Начало карьеры</h3>
+                        <p>[Опиши первое событие]</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h3>Важный проект</h3>
+                        <p>[Опиши важный проект]</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <h3>Новый этап</h3>
+                        <p>[Опиши следующий этап]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Мои <span class="highlight">достижения</span></h2>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="flip-left">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Награды</h3>
+                    <p>[Твои награды]</p>
+                </div>
+                
+                <div class="achievement-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Образование</h3>
+                    <p>[Твоё образование]</p>
+                </div>
+                
+                <div class="achievement-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="achievement-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Опыт работы</h3>
+                    <p>[Опыт работы]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Свяжись со <span class="highlight">мной</span></h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Давайте общаться!</h3>
+                    <p>Готов к новым проектам.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>твой.email@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (XXX) XXX-XX-XX</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Твоё имя. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
