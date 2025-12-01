@@ -3,84 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя биография</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Моя Любимая | Биография</title>
+    
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Иконки -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Анимации -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Стили -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
 </head>
 <body>
+    <!-- Кнопка меню -->
     <button class="menu-toggle" id="menuToggle">
         <i class="fas fa-bars"></i>
     </button>
     
+    <!-- Навигация -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">Мой<span>Сайт</span></a>
+            <a href="#home" class="logo">Моя<span>Любимая</span></a>
             <ul class="nav-menu">
                 <li><a href="#home">Главная</a></li>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#timeline">Мой путь</a></li>
-                <li><a href="#achievements">Достижения</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#about">О ней</a></li>
+                <li><a href="#gallery">Фотогалерея</a></li>
+                <li><a href="#story">История</a></li>
+                <li><a href="#qualities">Качества</a></li>
+                <li><a href="#moments">Моменты</a></li>
             </ul>
             <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon"></i>
+                <i class="fas fa-heart"></i>
             </button>
         </div>
     </nav>
     
+    <!-- Главный экран -->
     <section class="hero" id="home">
+        <div class="hero-background"></div>
         <div class="hero-content">
-            <h3 class="hero-subtitle" data-aos="fade-up">Привет, меня зовут</h3>
-            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
-                <span class="highlight">Твоё</span> Имя
-            </h1>
-            <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
-                [Напиши о себе кратко: чем занимаешься, что делаешь]
-            </p>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
-                <a href="#about" class="btn btn-primary">Узнать больше</a>
-                <a href="#contact" class="btn btn-secondary">Связаться</a>
+            <div class="hero-text" data-aos="fade-up">
+                <h3 class="hero-subtitle">Самая прекрасная</h3>
+                <h1 class="hero-title">
+                    <span class="highlight">Имя</span> Девушки
+                </h1>
+                <p class="hero-description">
+                    Нежная, умная, вдохновляющая. Её улыбка освещает мир, а сердце наполнено добротой.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">
+                        <i class="fas fa-heart"></i> Узнать больше
+                    </a>
+                    <a href="#gallery" class="btn btn-secondary">
+                        <i class="fas fa-images"></i> Фотографии
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <!-- ЗДЕСЬ БУДЕТ ГЛАВНОЕ ФОТО -->
+                <div class="main-photo-placeholder">
+                    <i class="fas fa-camera"></i>
+                    <p>Главное фото здесь</p>
+                </div>
             </div>
         </div>
         <div class="scroll-down">
             <span>Листай вниз</span>
             <i class="fas fa-chevron-down"></i>
         </div>
+        <div class="floating-hearts">
+            <div class="heart">❤</div>
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💓</div>
+        </div>
     </section>
     
+    <!-- Раздел "О ней" -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Обо <span class="highlight">мне</span></h2>
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-star"></i> О <span class="highlight">ней</span>
+            </h2>
             <div class="about-content">
                 <div class="about-image" data-aos="fade-right">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                        <p>Твоё фото здесь</p>
+                    <!-- ФОТО 1 -->
+                    <div class="photo-frame photo-1">
+                        <div class="photo-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                            <p>Фото 1: Портрет</p>
+                        </div>
                     </div>
                 </div>
                 <div class="about-text" data-aos="fade-left">
-                    <h3>Моя история</h3>
+                    <h3>Её история</h3>
                     <p>
-                        [Напиши свою историю здесь]
+                        [Здесь напиши о её происхождении, где родилась, выросла, чем увлекается]
                     </p>
                     <p>
-                        [Продолжение истории]
+                        [Опиши её характер, мечты, цели в жизни]
+                    </p>
+                    <p>
+                        [Что делает её особенной, уникальные черты характера]
                     </p>
                     
-                    <div class="facts">
-                        <div class="fact" data-aos="zoom-in" data-aos-delay="200">
-                            <span class="fact-number">5+</span>
-                            <span class="fact-text">Лет опыта</span>
+                    <div class="about-details">
+                        <div class="detail" data-aos="zoom-in">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <h4>День рождения</h4>
+                                <p>[Дата рождения]</p>
+                            </div>
                         </div>
-                        <div class="fact" data-aos="zoom-in" data-aos-delay="400">
-                            <span class="fact-number">50+</span>
-                            <span class="fact-text">Проектов</span>
+                        <div class="detail" data-aos="zoom-in" data-aos-delay="100">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Город</h4>
+                                <p>[Город проживания]</p>
+                            </div>
                         </div>
-                        <div class="fact" data-aos="zoom-in" data-aos-delay="600">
-                            <span class="fact-number">100%</span>
-                            <span class="fact-text">Энтузиазма</span>
+                        <div class="detail" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Образование</h4>
+                                <p>[Профессия/учеба]</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -88,125 +142,229 @@
         </div>
     </section>
     
-    <section class="timeline-section" id="timeline">
+    <!-- Фотогалерея -->
+    <section class="gallery" id="gallery">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Мой <span class="highlight">путь</span></h2>
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-images"></i> Фото<span class="highlight">галерея</span>
+            </h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                Самые красивые и памятные моменты
+            </p>
+            
+            <div class="gallery-grid">
+                <!-- Фото 2 -->
+                <div class="gallery-item" data-aos="flip-left">
+                    <div class="gallery-photo photo-placeholder">
+                        <i class="fas fa-smile"></i>
+                        <p>Фото 2: Улыбка</p>
+                    </div>
+                    <div class="gallery-caption">Сияющая улыбка</div>
+                </div>
+                
+                <!-- Фото 3 -->
+                <div class="gallery-item" data-aos="flip-left" data-aos-delay="150">
+                    <div class="gallery-photo photo-placeholder">
+                        <i class="fas fa-hiking"></i>
+                        <p>Фото 3: Хобби</p>
+                    </div>
+                    <div class="gallery-caption">Любимое занятие</div>
+                </div>
+                
+                <!-- Фото 4 -->
+                <div class="gallery-item" data-aos="flip-left" data-aos-delay="300">
+                    <div class="gallery-photo photo-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Фото 4: Портрет</p>
+                    </div>
+                    <div class="gallery-caption">Прекрасный портрет</div>
+                </div>
+                
+                <!-- Фото 5 -->
+                <div class="gallery-item" data-aos="flip-left" data-aos-delay="450">
+                    <div class="gallery-photo photo-placeholder">
+                        <i class="fas fa-heart"></i>
+                        <p>Фото 5: Отдых</p>
+                    </div>
+                    <div class="gallery-caption">Отдых на природе</div>
+                </div>
+            </div>
+            
+            <div class="gallery-instruction" data-aos="fade-up">
+                <i class="fas fa-info-circle"></i>
+                <p>Загрузи сюда её самые красивые фотографии!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- История знакомства -->
+    <section class="story" id="story">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-book-open"></i> Наша <span class="highlight">история</span>
+            </h2>
+            
             <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-date">2018</div>
+                <!-- Событие 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">Первая встреча</div>
                     <div class="timeline-content">
-                        <h3>Начало карьеры</h3>
-                        <p>[Опиши первое событие]</p>
+                        <h3>Когда мы познакомились</h3>
+                        <p>[Опиши, где и как вы познакомились]</p>
+                        <div class="timeline-photo photo-placeholder small">
+                            <i class="fas fa-calendar"></i>
+                            <p>Фото встречи</p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-date">2020</div>
+                <!-- Событие 2 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Первый разговор</div>
                     <div class="timeline-content">
-                        <h3>Важный проект</h3>
-                        <p>[Опиши важный проект]</p>
+                        <h3>О чём говорили</h3>
+                        <p>[Что обсуждали, что понравилось]</p>
                     </div>
                 </div>
                 
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="timeline-date">2022</div>
+                <!-- Событие 3 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">Первый свидание</div>
                     <div class="timeline-content">
-                        <h3>Новый этап</h3>
-                        <p>[Опиши следующий этап]</p>
+                        <h3>Куда ходили</h3>
+                        <p>[Опиши первое свидание]</p>
+                        <div class="timeline-photo photo-placeholder small">
+                            <i class="fas fa-coffee"></i>
+                            <p>Фото свидания</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Событие 4 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-date">Сейчас</div>
+                    <div class="timeline-content">
+                        <h3>Наши отношения</h3>
+                        <p>[Как развиваются отношения, планы на будущее]</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="achievements" id="achievements">
+    <!-- Качества -->
+    <section class="qualities" id="qualities">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Мои <span class="highlight">достижения</span></h2>
-            <div class="achievements-grid">
-                <div class="achievement-card" data-aos="flip-left">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-gem"></i> Её лучшие <span class="highlight">качества</span>
+            </h2>
+            
+            <div class="qualities-grid">
+                <div class="quality-card" data-aos="zoom-in">
+                    <div class="quality-icon">
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Награды</h3>
-                    <p>[Твои награды]</p>
+                    <h3>Доброта</h3>
+                    <p>Её сердце полно любви и заботы о других</p>
                 </div>
                 
-                <div class="achievement-card" data-aos="flip-left" data-aos-delay="200">
-                    <div class="achievement-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <div class="quality-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="quality-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Образование</h3>
-                    <p>[Твоё образование]</p>
+                    <h3>Ум</h3>
+                    <p>Умная и мудрая, всегда даст хороший совет</p>
                 </div>
                 
-                <div class="achievement-card" data-aos="flip-left" data-aos-delay="400">
-                    <div class="achievement-icon">
-                        <i class="fas fa-briefcase"></i>
+                <div class="quality-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="quality-icon">
+                        <i class="fas fa-laugh-beam"></i>
                     </div>
-                    <h3>Опыт работы</h3>
-                    <p>[Опыт работы]</p>
+                    <h3>Чувство юмора</h3>
+                    <p>Умеет смеяться и радоваться жизни</p>
+                </div>
+                
+                <div class="quality-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="quality-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Поддержка</h3>
+                    <p>Всегда поддержит в трудную минуту</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="contact" id="contact">
+    <!-- Особые моменты -->
+    <section class="moments" id="moments">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Свяжись со <span class="highlight">мной</span></h2>
-            <div class="contact-content">
-                <div class="contact-info" data-aos="fade-right">
-                    <h3>Давайте общаться!</h3>
-                    <p>Готов к новым проектам.</p>
+            <h2 class="section-title" data-aos="fade-up">
+                <i class="fas fa-camera-retro"></i> Особые <span class="highlight">моменты</span>
+            </h2>
+            
+            <div class="moments-content">
+                <div class="moment-text" data-aos="fade-right">
+                    <h3>Что я ценю больше всего</h3>
+                    <p>[Опиши самые трогательные моменты вместе]</p>
+                    <p>[Что особенно запомнилось, важные события]</p>
+                    <p>[Почему она особенная для тебя]</p>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>твой.email@example.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Телефон</h4>
-                                <p>+7 (XXX) XXX-XX-XX</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <div class="special-quote" data-aos="fade-up">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"[Здесь можно вставить её любимую фразу или твои слова о ней]"</p>
+                        <i class="fas fa-quote-right"></i>
                     </div>
                 </div>
                 
-                <div class="contact-form" data-aos="fade-left">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Ваш email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Отправить</button>
-                    </form>
+                <div class="moment-photos" data-aos="fade-left">
+                    <!-- Фото 6 -->
+                    <div class="moment-photo large photo-placeholder">
+                        <i class="fas fa-star"></i>
+                        <p>Фото 6: Особенный момент</p>
+                    </div>
+                    
+                    <!-- Фото 7 -->
+                    <div class="moment-photo small photo-placeholder">
+                        <i class="fas fa-heart"></i>
+                        <p>Фото 7: Ещё один момент</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
+    <!-- Посвящение -->
+    <section class="dedication">
+        <div class="container">
+            <div class="dedication-content" data-aos="zoom-in">
+                <i class="fas fa-heart dedication-heart"></i>
+                <h2>Этот сайт создан с любовью</h2>
+                <p>Для самой прекрасной девушки на свете</p>
+                <p class="dedication-date">[Дата создания]</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Футер -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="currentYear"></span> Твоё имя. Все права защищены.</p>
+            <div class="footer-content">
+                <div class="footer-heart">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p>Создано с бесконечной любовью и восхищением</p>
+                <p>© <span id="currentYear"></span> Вечная любовь</p>
+                <div class="footer-love">
+                    <span>L</span>
+                    <span>O</span>
+                    <span>V</span>
+                    <span>E</span>
+                </div>
+            </div>
         </div>
     </footer>
     
+    <!-- Скрипты -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
